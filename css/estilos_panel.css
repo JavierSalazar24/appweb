@@ -1,0 +1,726 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fdf8e9;
+  font-family: sans-serif;
+}
+
+/* inicio de estilos del panel de control */
+
+#clientes {
+  margin: auto;
+}
+
+.btn3-editar-aval {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(226, 36, 19);
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+}
+
+.btn-editar-aval:hover {
+  font-size: 1.05rem;
+  background-color: rgb(38, 112, 196);
+}
+
+header {
+  background: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  /* border: 4px inset black; */
+}
+
+.titulo-panel {
+  font-size: 20px;
+}
+
+.fecha,
+.bienvenido {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+.foto {
+  width: 2rem;
+  height: 2rem;
+  margin-top: 7.5px;
+}
+
+.salir {
+  color: white;
+  font-size: 30px;
+  margin-top: 7.5px;
+}
+
+.salir:hover {
+  color: rgb(136, 132, 132);
+}
+
+.seccion-menu {
+  display: flex;
+}
+
+.nav-panel {
+  width: 55rem;
+  background: #fad1bf98;
+  padding: 0;
+  flex-wrap: wrap;
+  border: 8px double #a78779cc;
+  box-shadow: 0px 8px 32px 1px #ffa078;
+}
+
+.ul-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu-nav {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.icono-panel {
+  color: black;
+}
+
+.li-menu-nav {
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+
+.li-menu-nav:hover {
+  background-color: #ff9d73;
+  border: 2px solid white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.ancla-caja {
+  margin-bottom: 1rem;
+}
+
+.cajas {
+  background: #ffffff;
+  margin-top: 1rem;
+  width: 14rem;
+  height: 160px;
+  padding: 2rem;
+  text-align: center;
+  border: 8px double #f8af41;
+  border-radius: 10px;
+  box-shadow: 0px 0px 32px 1px #f5f859;
+}
+
+.cajas:hover {
+  background: #fffb002c;
+  box-shadow: 0px 0px 32px 1px #fbff00;
+  width: 226px;
+  height: 161px;
+}
+
+.iconos {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.438);
+}
+
+p {
+  font-size: 20px;
+}
+
+.degradado {
+  background-color: rgba(61, 58, 58, 0.199);
+}
+
+.letra-degradado {
+  font-size: 10px;
+}
+
+.ul-ventas {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ul-ventas {
+  text-align: left;
+  flex-direction: column;
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: -2.2rem;
+  margin-left: 15.8rem;
+}
+
+.li-ventas:hover > .ul-ventas {
+  display: block;
+}
+
+.li-ventas-desplegable {
+  border: 4px double #a78779cc;
+  box-shadow: 0px 8px 20px 1px #ffa078;
+  background-color: #fad1bf;
+  margin-left: -2.9rem;
+  padding: 10px 15px;
+}
+
+.li-ventas-desplegable:hover {
+  background: #ff9d73;
+  border: 2px solid white;
+}
+
+/* inicio de lista desplegable en ventas, productos y clientes */
+
+.ul-ventas-panel {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ul-ventas-panel {
+  text-align: left;
+  flex-direction: column;
+  list-style: none;
+  display: none;
+  position: absolute;
+  margin-top: 0.95rem;
+  margin-left: 0.1rem;
+}
+
+.li-ventas-panel:hover > .ul-ventas-panel {
+  display: block;
+}
+
+.li-ventas-desplegable-panel {
+  border: 4px double #a78779cc;
+  background-color: #fad1bf;
+  margin-left: -40px;
+  padding: 10px 15px;
+}
+
+.li-ventas-desplegable-panel:hover {
+  background: #ff9d73;
+  border: 2px solid white;
+  box-shadow: 0px 12px 32px 1px #ffa078;
+}
+
+.menu-nav-des {
+  text-decoration: none;
+  color: black;
+}
+
+/* fin de estilos del panel de control de ventas, productos y clientes */
+
+/* inicio de estilos que comparten en panel de control */
+.menu-opciones-panel {
+  background: #fad1bf98;
+  padding: 0;
+  margin: 0;
+  border: 8px inset #ffa078;
+  box-shadow: 0px 8px 20px 1px #ffa078;
+}
+
+.ul-menu-opciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.li-menu-opciones {
+  padding: 0.8rem 2.2rem;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  border-right: 2px solid white;
+}
+
+.li-usuarios {
+  width: 270%;
+}
+
+.li-productos {
+  width: 185%;
+}
+
+.li-menu-opciones:hover {
+  background-color: #ff9d73;
+  border: 2px solid white;
+}
+
+.admins {
+  border-right: 0px solid;
+}
+
+table th {
+  background-color: #f8af41 !important;
+  color: black;
+}
+
+table > tbody > tr > td {
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.btn-group,
+.btn-group-vertical {
+  position: absolute !important;
+}
+
+.btn-excel {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  cursor: pointer;
+  margin: 0 0 -1.3rem 1rem;
+}
+
+.btn-pdf {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  cursor: pointer;
+  margin: 0 0 -1.3rem -4px;
+}
+
+.btn-imprimir {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  cursor: pointer;
+  margin: 0 0 -1.3rem -4px;
+}
+
+.btn-excel:hover {
+  background-color: #2b8640;
+  border-color: #2b8640;
+}
+
+.btn-pdf:hover {
+  background-color: #b93e4b;
+  border-color: #b93e4b;
+}
+
+.btn-imprimir:hover {
+  background-color: #1c8494;
+  border-color: #1c8494;
+}
+
+.titulo-upma {
+  margin: 90px 0 30px 0;
+  text-align: center;
+}
+
+.btn-eliminar {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgb(202, 27, 27);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-eliminar:hover {
+  background-color: rgb(175, 40, 40);
+  font-size: 18px;
+}
+
+.btn-editar {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: rgb(17, 221, 44);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-editar:hover {
+  background-color: rgb(26, 185, 47);
+  font-size: 18px;
+}
+
+.btn-listo {
+  padding: 5px 6px;
+  border-radius: 6px;
+  background-color: rgb(17, 221, 44);
+  color: white;
+  text-decoration: none;
+}
+
+.btn-listo:hover {
+  background-color: rgb(26, 185, 47);
+  font-size: 18px;
+}
+
+.div-btn-agregar {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.btn-agregar {
+  text-align: center;
+  padding: 5px 10px;
+  border: 8px double #f8af41;
+  border-radius: 10px;
+  box-shadow: 0px 0px 32px 1px #eef131;
+  color: black;
+  margin-right: 2rem;
+  background-color: white;
+}
+
+.btn-agregar:hover {
+  background-color: #f5f85948;
+  font-size: 18px;
+  box-shadow: 0px 0px 32px 1px #fbff00;
+}
+
+.div-eliminar-multiple-agregar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.eliminar-multiple-input {
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.eliminar-multiple {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 8px double #f84141;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px #e62424;
+  color: black;
+  text-decoration: none;
+}
+
+.eliminar-multiple-input:hover {
+  font-size: 1.1rem;
+}
+
+.eliminar-multiple:hover {
+  background-color: #f8414148;
+  box-shadow: 0px 0px 32px 1px #e62424;
+  font-size: 1.1rem;
+}
+/* fin de estilos que comparten en panel de control */
+
+/* inicio de estilos para insertar cualquier dato en el panel */
+
+.caja2 {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem auto;
+  background: #b2ebf2;
+  border-radius: 10px;
+  border: 10px solid #204051;
+  box-sizing: border-box;
+}
+
+.formulario {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.registrarse {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 40px;
+}
+
+.btns {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+.btn1 {
+  background-color: #23b3aed5;
+  margin-right: 300px;
+  margin-top: auto;
+  padding: 6px 6px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn1:hover {
+  box-shadow: 0px 0px 32px 5px rgb(60, 117, 143);
+}
+
+.registro {
+  background-color: #23b3aed5;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 6px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.registro:hover {
+  box-shadow: 0px 0px 32px 5px rgb(60, 117, 143);
+}
+
+.div-ojo-panel {
+  margin: -1.3rem 0 0 0;
+  padding: 0;
+  text-align: right;
+}
+
+.label-insert {
+  display: block;
+  width: 400px;
+  border: 2px solid #204051;
+  padding: 8px 10px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.input-insert {
+  display: block;
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font: 16px/16px Verdana;
+  padding: 0;
+}
+
+.span-insert {
+  color: #204051;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  transition: 0.25s;
+  font: 16px/16px Verdana;
+  padding: 0;
+}
+
+.div-formulario-panel {
+  margin-bottom: 1.5rem;
+}
+
+/* focus */
+
+.label-insert.focus {
+  border-color: #0389cc;
+}
+
+.label-insert > .span-insert.focus {
+  color: #0389cc;
+}
+
+/* top */
+
+.label-insert > .span-insert.top {
+  left: 2px;
+  top: -10px;
+  font-size: 14px;
+  background-color: #b2ebf2;
+  padding: 0 5px;
+}
+
+/* fin de estilos para insertar cualquier dato en el panel */
+
+/* inicio de estilos para editar cualquier dato en el panel */
+
+.caja2-edit {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem auto;
+  background: #c5f0a4;
+  border-radius: 10px;
+  border: 10px solid #21bf73;
+  box-sizing: border-box;
+}
+
+.btn1-edit {
+  background-color: #2a580c73;
+  margin-right: 300px;
+  margin-top: auto;
+  padding: 6px 6px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn1-edit:hover {
+  box-shadow: 0px 0px 32px 5px rgb(60, 143, 71);
+}
+
+.registro-edit {
+  background-color: #2a580c73;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 6px;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.registro-edit:hover {
+  box-shadow: 0px 0px 32px 5px rgb(60, 143, 71);
+}
+
+.label-insert-edit {
+  display: block;
+  width: 400px;
+  border: 2px solid #009975;
+  padding: 11px 10px 8px 10px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.span-insert-edit {
+  color: #009975;
+  position: absolute;
+  top: -11px;
+  left: 10px;
+  transition: 0.25s;
+  background-color: #c5f0a4;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+/* estilos de abonos */
+
+.label-insert-abono {
+  display: block;
+  width: 400px;
+  border: 2px solid #204051;
+  padding: 11px 10px 8px 10px;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.span-insert-abono {
+  color: #204051;
+  position: absolute;
+  top: -11px;
+  left: 10px;
+  transition: 0.25s;
+  background: #b2ebf2;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+/* fin de estilos para editar cualquier dato en el panels */
